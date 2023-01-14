@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <script>
+            function check()
+            {
+                var name=document.getElementById('name');
+                var x=name.value;
+                var password=document.getElementById('password');
+                var y=password.value;
+                if(x=='abc')
+                  alert('success');
+                else
+                   alert('error! Wrong username');  
+                
+                if(y!='abcd')  
+                    alert('error! Wrong password');
+            }
+        </script>
+    </head>
+    <body>
+        Name      <input type="text" id="name"><br>
+        Password  <input type="text" id="password"><br>
+        
+        <button>click
+            <input type="button" onclick="check()">
+        </button>    
+    </body>
+</html>
